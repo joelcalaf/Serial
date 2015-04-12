@@ -1,40 +1,36 @@
-float kgCO2m2 = 3,2;
+float kgCO2m2 = 5.5;
 
 void setup()              // run once, when the sketch starts
 {
   Serial.begin(9600);     // set up Serial library at 9600 bps
 
-  if ( kgCO2m2 < 3,5)
+  if ( kgCO2m2 < 3.5)
   {
-    Serial.print("Aigua encara no bull");
+    Serial.print("A");
   } 
-  else if ( kgCO2m2 >= 90 && kgCO2m2 < 100)
+  else if ( kgCO2m2 < 6.5)
   {
-    Serial.print("Aigua apunt de bullir!");
+    Serial.print("B");
   }
-  else if ( tempAigua >= 90 && tempAigua < 100)
+  else if ( kgCO2m2 < 11.1)
   {
-    Serial.print("Aigua apunt de bullir!");
+    Serial.print("C");
   }
-  else if ( tempAigua >= 90 && tempAigua < 100)
+  else if ( kgCO2m2 < 17.7)
   {
-    Serial.print("Aigua apunt de bullir!");
+    Serial.print("D");
   }
-  else if ( tempAigua >= 90 && tempAigua < 100)
+  else if ( kgCO2m2 < 38.7)
   {
-    Serial.print("Aigua apunt de bullir!");
+    Serial.print("E");
   }
-  else if ( tempAigua >= 90 && tempAigua < 100)
+  else if ( kgCO2m2 < 43.2)
   {
-    Serial.print("Aigua apunt de bullir!");
+    Serial.print("F");
   }
-  else if ( tempAigua >= 90 && tempAigua < 100)
+  else if ( kgCO2m2 >= 43.2)
   {
-    Serial.print("Aigua apunt de bullir!");
-  }
-  else
-  {
-    Serial.print("Aigua bullint");
+    Serial.print("G");
   }
 }
 
